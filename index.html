@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
+      integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="scripts.js" defer></script>
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body
+    class="d-flex flex-column justify-content-center align-items-center min-vh-100"
+  >
+    <!-- Sign-up form start -->
+
+    <div
+      class="form-wrapper bg-white ps-lg-5 pe-lg-3 py-lg-3 mb-4 p-md-0 gy-4 rounded rounded-4 shadow-lg"
+    >
+      <div class="row g-5">
+        <div
+          class="col-lg-6 col-md-6 col-12 order-2 order-md-2 order-lg-1 m-auto p-lg-0 p-5"
+        >
+          <h1 class="display-4 mb-4">Stay updated!</h1>
+          <p class="mb-4">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="mb-5">
+            <li class="mb-2">Product discovery and building what matters</li>
+            <li class="mb-2">Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <div class="d-flex justify-content-between">
+            <label for="emailInput" class="form-label fw-bold"
+              >Email address</label
+            >
+            <small id="errorMessage" class="text-danger"
+              >Valid email required</small
+            >
+          </div>
+          <input
+            type="email"
+            name="emailInput"
+            id="emailInput"
+            class="rounded rounded-3 p-2 mb-4"
+            placeholder="email@company.com"
+          />
+          <div class="d-grid">
+            <button
+              type="submit"
+              class="button fw-bold rounded rounded-3 p-3"
+              id="submitButton"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-md-6 col-12 order-1 order-md-1 order-lg-2 img-col"
+        >
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="Sign Up"
+            class="img-fluid object-fit-cover d-lg-block d-md-block d-none"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Sign up"
+            class="w-100 d-lg-none d-md-none d-block"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <div
+      id="successWrapper"
+      class="success-wrapper-none p-5 mb-4 bg-white rounded rounded-4 shadow-lg"
+    >
+      <div>
+        <img
+          src="./assets/images/icon-success.svg"
+          alt="Success"
+          class="mb-4"
+        />
+        <h2 class="mb-4 display-4">Thanks for subscribing!</h2>
+        <p class="mb-4">
+          A confirmation email has been sent to
+          <strong>ash@loremcompany.com.</strong> Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+      </div>
+      <div class="d-grid">
+        <button id="dismissButton" class="button rounded rounded-3 p-3">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+
+    <!-- Success message end -->
+
+    <div class="attribution text-center text-white mb-4">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://angethan.netlify.app/" target="_blank"
+        >Aggelos Thanasis</a
+      >.
+    </div>
+  </body>
+</html>
